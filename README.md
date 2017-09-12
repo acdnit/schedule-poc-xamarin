@@ -1,2 +1,2 @@
 # schedule-poc-xamarin
-Power outage calendar of Can Tho city
+A schedule for Power outage calendar of Can Tho city
