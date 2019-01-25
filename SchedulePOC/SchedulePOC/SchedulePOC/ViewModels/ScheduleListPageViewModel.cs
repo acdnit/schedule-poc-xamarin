@@ -2,23 +2,29 @@
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
 using SchedulePOC.Servvices;
 using Xamarin.Forms;
 
-namespace SchedulePOC.ViewModels {
-    public class ScheduleListPageViewModel : ViewModelBase {
+namespace SchedulePOC.ViewModels
+{
+    public class ScheduleListPageViewModel : ViewModelBase
+    {
         private readonly IPageDialogService _pageDialogService;
+        public DelegateCommand ReloadCommand { get; set; }
 
         private readonly IScheduleService _scheduleService;
         private bool _isConnected;
         private HtmlWebViewSource _resource;
 
-        public ScheduleListPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IScheduleService scheduleService) : base(navigationService) {
+        public ScheduleListPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IScheduleService scheduleService) : base(navigationService)
+        {
             Title = "Lịch cúp điện";
             _scheduleService = scheduleService;
             _pageDialogService = pageDialogService;
+            ReloadCommand = new DelegateCommand(ReloadWebView);
         }
 
         public HtmlWebViewSource Resource {
@@ -31,9 +37,19 @@ namespace SchedulePOC.ViewModels {
             set => SetProperty(ref _isConnected, value);
         }
 
-        public override async void OnNavigatedTo(NavigationParameters parameters)
+        private void ReloadWebView()
+        {
+            LoadData();
+        }
+
+        public override void OnNavigatingTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
+            LoadData();
+        }
+
+        async void LoadData()
+        {
             IsConnected = CrossConnectivity.Current.IsConnected(0);
             if (IsConnected)
             {

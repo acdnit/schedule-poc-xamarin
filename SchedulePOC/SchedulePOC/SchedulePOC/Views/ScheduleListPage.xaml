@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <WebView Source="{Binding Resource}" WidthRequest="1000" HeightRequest="1000" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Button Text="Reload" Command="{Binding ReloadCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

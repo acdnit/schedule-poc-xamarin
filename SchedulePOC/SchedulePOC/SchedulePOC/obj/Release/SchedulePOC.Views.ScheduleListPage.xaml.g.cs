@@ -11,8 +11,8 @@
 namespace SchedulePOC.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/Sched" +
-        "ulePOC/Views/ScheduleListPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Temps\\schedule-poc-xamarin\\SchedulePOC\\SchedulePOC\\SchedulePOC\\Views\\ScheduleL" +
+        "istPage.xaml")]
     public partial class ScheduleListPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

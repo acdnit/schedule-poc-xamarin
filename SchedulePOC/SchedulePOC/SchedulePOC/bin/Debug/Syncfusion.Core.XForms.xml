@@ -1,0 +1,2138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Core.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.XForms.TextInputLayout.IAnimateInNative">
+            <summary>
+            Interface which is used to pass data to native methods using dependency services.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.IAnimateInNative.AnimateTo(Xamarin.Forms.Label,System.Double,System.Double,System.Int32,System.Double,System.Boolean,System.Boolean)">
+            <summary>
+            Passes value to native to perform animation.
+            </summary>
+            <param name="label">label</param>
+            <param name="x">x</param>
+            <param name="y">y</param>
+            <param name="duration">duration</param>
+            <param name="scale">scale</param>
+            <param name="isBeingAnimate">Whether translation should be animatable</param>
+            <param name="isRTL">whether current direction is RTL or LTR</param>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.AnimationHelper">
+            <summary>
+            Helps custom animation for scaling and translation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.AnimationHelper.TranslationAnimateTo(Xamarin.Forms.Label,System.UInt32,System.Double,System.Double,System.Double,System.Boolean,System.Boolean)">
+            <summary>
+            Perform animation either in PCL or in the native UWP.
+            </summary>
+            <param name="label">label</param>
+            <param name="duration">duration</param>
+            <param name="x">x</param>
+            <param name="y">y</param>
+            <param name="scale">scaleValue</param>
+            <param name="canAnimate">Whether translation should be animatable</param>
+            <param name="isRTL">Whether current direction is RTL or LTR</param>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.ViewPosition">
+            <summary>
+            Specifies the position of the leading and trailing views in the <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout" />.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.ViewPosition.Inside">
+            <summary>
+            Positions the view inside the layout region.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.ViewPosition.Outside">
+            <summary>
+            Positions the view outside the layout region.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.ContainerType">
+            <summary>
+            Specifies the background appearance of <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.ContainerType.Outlined">
+            <summary>
+            Draws a border around the <seealso cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.ContainerType.Filled">
+            <summary>
+            Draws a base line.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.ContainerType.None">
+            <summary>
+            Contains no background and compact spacing. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.InputLayoutBorder">
+            <summary>
+            Represent the class which draws a border with the available attributes.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.thickness">
+            <summary>
+            Gets or sets the thickness of the border.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.cornerRadius">
+            <summary>
+            Gets or sets the corner radius.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.color">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.background">
+            <summary>
+            Gets or sets the fill color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.text">
+            <summary>
+            Gets or sets the text value for hint label.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.#ctor(Syncfusion.XForms.TextInputLayout.SfTextInputLayout)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.TextInputLayout.InputLayoutBorder"/> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="E:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.PropertyChanged">
+            <summary>
+            Occurs when property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.Thickness">
+            <summary>
+            Gets or sets the thickness of the border.
+            </summary>
+            <value>The thickness.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.CornerRadius">
+            <summary>
+            Gets or sets the corner radius.
+            </summary>
+            <value>The corner radius.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.Color">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.Background">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.Text">
+            <summary>
+            Gets or sets the text value for hint label.
+            </summary>
+            <value>The floating label text.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.InputLayout">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.InputLayoutBorder.NotifyPropertyChanged(System.String)">
+            <summary>
+            Notifies the property changed.
+            </summary>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.PasswordToggleView">
+            <summary>
+            Represents password toggle functionality.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.PasswordToggleView.ColorProperty">
+            <summary>
+            The  property for <see cref="P:Syncfusion.XForms.TextInputLayout.PasswordToggleView.Color"/> property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.PasswordToggleView.IsCheckedProperty">
+            <summary>
+            The property for <see cref="P:Syncfusion.XForms.TextInputLayout.PasswordToggleView.IsChecked"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.PasswordToggleView.Color">
+            <summary>
+            Gets or sets the toggle view color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.PasswordToggleView.IsChecked">
+            <summary>
+            Gets or sets a value indicating whether the entry was toggled or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.PasswordToggleView.InputLayout">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout">
+            <summary>
+            The text input layout control adds decorative elements such as floating label, icons, and assistive labels
+            on the top of the input views such as SfMaskedEdit, SfNumericTextBox, Entry, and Editor controls.
+            Key features,
+            <list type="bullet">
+            <item><description>Displays floating label when the input view is focused</description></item>
+            <item><description>Displays error label</description></item>
+            <item><description>Supports filled and outlined container types</description></item>
+            <item><description>Displays leading and trailing icons</description></item>
+            <item><description>Displays help label</description></item>
+            <item><description>Displays maximum characters count</description></item>
+            <item><description>Toggles password visibility</description></item>
+            </list>
+            </summary>
+            <example>
+            <code>
+            <![CDATA[
+            <inputLayout:SfTextInputLayout Hint="Hint" HelperText="Helper" ErrorText="Error">
+                <Entry />
+            </inputLayout:SfTextInputLayout>
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShowHintProperty">
+            <summary>
+            Gets or sets a value that indicates whether to display the hint text.  
+            </summary>
+            <value><c>true</c> if show hint; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EnableHintAnimationProperty">
+            <summary>
+            Gets or sets a value that indicates whether to enable animation for the hint text 
+            when the input view is focused or unfocused.  
+            </summary>
+            <value><c>true</c> if enable hint animation; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShowCharCountProperty">
+            <summary>
+            Gets or sets a value that indicates whether to display the character count when the value is changed.  
+            </summary>
+            <value><c>true</c> if enable counter; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShowHelperTextProperty">
+            <summary>
+            Gets or sets a value that indicates whether to display the helper text.  
+            </summary>
+            <value><c>true</c> if show helper text; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HasErrorProperty">
+            <summary>
+            Gets or sets a value that indicates whether it has validation errors.  
+            </summary>
+            <value><c>true</c> if has error; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EnableFloatingProperty">
+            <summary>
+            Gets or sets a value that indicates whether to float the label when it is focused or unfocused.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EnablePasswordVisibilityToggleProperty">
+            <summary>
+            Gets or sets a value that indicates whether to show the password visibility toggle.  
+            </summary>
+            <value><c>true</c> if enable password visibility toggle; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ContainerBackgroundColorProperty">
+            <summary>
+            Gets or sets the background color of the container.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorColorProperty">
+            <summary>
+            Gets or sets the color of the error text, line, and floating label text when setting error.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedColorProperty">
+            <summary>
+            Gets or sets the color of the hint label and border when the control is focused.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UnfocusedColorProperty">
+            <summary>
+            Gets or sets the color of the hint label and border when the control is unfocused.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.InputViewProperty">
+            <summary>
+            Gets or sets the value for input view to place behind the hint label.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LeadingViewProperty">
+            <summary>
+            Gets or sets a value for a view to place before input view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.TrailingViewProperty">
+            <summary>
+            Gets or sets a value for a view to place after input view.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LeadingViewPositionProperty">
+            <summary>
+            Gets or sets the value that determines whether to place the leading view within the layout.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.TrailingViewPositionProperty">
+            <summary>
+            Gets or sets a value that determines whether to place the trailing view within the layout.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HintProperty">
+            <summary>
+            Gets or sets a value for hint text in the input view.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperTextProperty">
+            <summary>
+            Gets or sets a value for helper text in the input view.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextProperty">
+            <summary>
+            Gets or sets the value for validation error.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ContainerTypeProperty">
+            <summary>
+            Gets or sets a value that determines the appearance of background and its border.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CharMaxLengthProperty">
+            <summary>
+            Gets or sets the length of the maximum character value.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsEnabledProperty">
+            <summary>
+            Gets or sets a value that indicates whether users can interact with the control.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CurrentActiveColorKey">
+            <summary>
+            Gets a value for current active color based on input view focus state.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CurrentActiveColorProperty">
+            <summary>
+            Gets a value for current active color based on input view focus state.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ReserveSpaceForAssistiveLabelsProperty">
+            <summary>
+            Gets or sets a value indicating whether to allocate space for assistive labels.
+            assistive labels includes helper text, error text and character counter.
+            </summary>
+            <remarks> when this property is set as false, assitive labels will not be shown even they are not enabled.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OutlineCornerRadiusProperty">
+            <summary>
+            Gets or sets a value to customize the customize the corner radius of outline border.
+            </summary>
+            <remarks> it is applicable only when set the container type as outlined.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedStrokeWidthProperty">
+            <summary>
+            Gets or sets as value to customize the stroke width in focused state, it is applicable for the bottom line and outline border 
+            when setting the container type as filled and outlined respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UnfocusedStrokeWidthProperty">
+            <summary>
+            Gets or sets as value to customize the stroke width in unfocused state, it is applicable for the bottom line and outline border
+            when setting the container type as filled and outlined respectively.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ICONSIZE">
+            <summary>
+            Size of the leading and trailing icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsRTLProperty">
+            <summary>
+            Gets or sets the layout flow direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HintColorProperty">
+            <summary>
+            Gets or sets the hint color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.DisabledHintColorProperty">
+            <summary>
+            Gets or sets the disabled hint color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintFocusedColorProperty">
+            <summary>
+            Gets or sets the floated hint color when the control is focused.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintUnfocusedColorProperty">
+            <summary>
+            Gets or sets the floated hint color when the control is unfocused.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintErrorColorProperty">
+            <summary>
+            Gets or sets the floated hint error color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintDisabledColorProperty">
+            <summary>
+            Gets or sets the floated hint disabled color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LineColorProperty">
+            <summary>
+            Gets or sets the line color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedLineColorProperty">
+            <summary>
+            Gets or sets the focused line color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorLineColorProperty">
+            <summary>
+            Gets or sets the error line color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FilledLineDisabledColorProperty">
+            <summary>
+            Gets or sets the disabled filled line color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OutlinedLineDisabledColorProperty">
+            <summary>
+            Gets or sets the disabled outlined line color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelColorProperty">
+            <summary>
+            Gets or sets the counter label color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelErrorColorProperty">
+            <summary>      
+            Gets or sets the counter label error color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelDisabledColorProperty">
+            <summary>
+            Gets or sets the disabled counter label color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ContainerBackgroundDisabledColorProperty">
+            <summary>
+            Gets or sets the disabled container background  color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperTextColorProperty">
+            <summary>
+            Gets or sets the helper text color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperTextDisabledColorProperty">
+            <summary>
+            Gets or sets the disabled helper text color. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextColorProperty">
+            <summary>
+            Gets or sets the error text color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextDisabledColorProperty">
+            <summary>
+            Gets or sets the error text disabled color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleFocusedColorProperty">
+            <summary>
+            Gets or sets the password toggle focused color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleUnfocusedColorProperty">
+            <summary>
+            Gets or sets the password toggle unfocused color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleDisabledColorProperty">
+            <summary>
+            Gets or sets the password toggle disabled color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleErrorColorProperty">
+            <summary>
+            Gets or sets the password toggle error color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.mainGrid">
+            <summary>
+            Contains the position definition of the control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.passwordToggleIconSize">
+            <summary>
+            Gets or sets size of the password toggle view icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.animationDuration">
+            <summary>
+            Gets or sets the duration of the animation in milliseconds.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.disabledFilledColor">
+            <summary>
+            Gets or sets the disabled filled color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.disabledOutlineColor">
+            <summary>
+            Gets or sets the disabled outline border color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.filledTopPadding">
+            <summary>
+            Gets or sets the top padding of the input view when container type was filled.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.filledBottomPadding">
+            <summary>
+            Gets or sets the bottom padding of the input view when container type was filled.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.noneBottomPadding">
+            <summary>
+            Gets or sets the bottom padding of the input view when container type was none.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.outlinedPadding">
+            <summary>
+            Gets or sets the top and bottom padding of the input view when container type was outlined.
+            </summary>
+            <remarks>
+            As per spec, total control padding is 36 and outlined top/bottom padding is 16.
+            But we have applied top margin as 8 for resolving floated label cropping issue
+            So outlined padding should be 14.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.hintLabel">
+            <summary>
+            Displays floating label.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.errorLabel">
+            <summary>
+            Displays error text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.helperLabel">
+            <summary>
+            Displays assistive text for the input view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.counterLabel">
+            <summary>
+            Displays character count and its maximum limit.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.baseLine">
+            <summary>
+            Line between the input view and helper text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.outlineBorder">
+            <summary>
+            Displays the border around the input view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.isFocused">
+            <summary>
+            Gets or sets whether the input view was focused or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ControlTemplate">
+            <summary>
+            Gets or Sets a value for template that specifies a group of styles and effects for controls.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShowHint">
+            <summary>
+            Gets or sets a value indicating whether to display the hint text.  
+            </summary>
+            <value><c>true</c> if show hint; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EnableHintAnimation">
+            <summary>
+            Gets or sets a value indicating whether to enable animation for the hint text 
+            when the input view is focused or unfocused.  
+            </summary>
+            <value><c>true</c> if enable hint animation; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShowCharCount">
+            <summary>
+            Gets or sets a value indicating whether to display the character count when the value is changed.  
+            </summary>
+            <value><c>true</c> if enable counter; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShowHelperText">
+            <summary>
+            Gets or sets a value indicating whether to display the helper text.  
+            </summary>
+            <value><c>true</c> if show helper text; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HasError">
+            <summary>
+            Gets or sets a value indicating whether it has validation errors.  
+            </summary>
+            <value><c>true</c> if has error; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EnableFloating">
+            <summary>
+            Gets or sets a value indicating whether to float the label when it is focused or unfocused.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EnablePasswordVisibilityToggle">
+            <summary>
+            Gets or sets a value indicating whether to show the password visibility toggle.  
+            </summary>
+            <value><c>true</c> if enable password visibility toggle; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ContainerBackgroundColor">
+            <summary>
+            Gets or sets the background color of the container.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorColor">
+            <summary>
+            Gets or sets the color of the error text, line, and floating label text when setting error.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedColor">
+            <summary>
+            Gets or sets the color of the hint label and border when the control is focused.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UnfocusedColor">
+            <summary>
+            Gets or sets the color of the hint label and border when the control is unfocused.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CurrentActiveColor">
+            <summary>
+            Gets a value for current active color based on input view focus state.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.InputView">
+            <summary>
+            Gets or sets the value for input view to place behind the hint label.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LeadingView">
+            <summary>
+            Gets or sets a value for a view to place before input view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.TrailingView">
+            <summary>
+            Gets or sets a value for a view to place after input view.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LeadingViewPosition">
+            <summary>
+            Gets or sets the value that determines whether to place the leading view within the layout.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.TrailingViewPosition">
+            <summary>
+            Gets or sets a value that determines whether to place the trailing view within the layout.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.Hint">
+            <summary>
+            Gets or sets a value for hint text in the input view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperText">
+            <summary>
+            Gets or sets a value for helper text in the input view.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorText">
+            <summary>
+            Gets or sets the value for validation error.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ContainerType">
+            <summary>
+            Gets or sets a value that determines the appearance of background and its border.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CharMaxLength">
+            <summary>
+            Gets or sets the length of the maximum character value.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether users can interact with the control.  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ReserveSpaceForAssistiveLabels">
+            <summary>
+            Gets or sets a value indicating whether to allocate space for assistive labels.
+            Assistive labels includes helper text, error text and character counter.
+            </summary>
+            <remarks>When this property is set as false, assitive labels will not be shown even they are not enabled.</remarks>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OutlineCornerRadius">
+            <summary>
+            Gets or sets a value to customize the corner radius of outline border.
+            </summary>
+            <remarks>It is applicable only when set the container type as outlined.</remarks>
+            <value>The default value is 4.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedStrokeWidth">
+            <summary>
+            Gets or sets as value to customize the stroke width in focused state, it is applicable for the bottom line and outline border 
+            when setting the container type as filled and outlined respectively.
+            </summary>
+            <value>The default value is 2.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UnfocusedStrokeWidth">
+            <summary>
+            Gets or sets as value to customize the stroke width in unfocused state, it is applicable for the bottom line and outline border 
+            when setting the container type as filled and outlined respectively.
+            </summary>
+            <value>The default value is 1.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsRTL">
+            <summary>
+            Gets or sets a value indicating whether the layout flow direction is RTL.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HintColor">
+            <summary>
+            Gets or sets the hint color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.DisabledHintColor">
+            <summary>
+            Gets or sets the disabled hint color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintFocusedColor">
+            <summary>
+            Gets or sets the floated hint color when the control is focused.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintUnfocusedColor">
+            <summary>
+            Gets or sets the floated hint color when the control is unfocused.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintErrorColor">
+            <summary>
+            Gets or sets the floated hint error color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FloatedHintDisabledColor">
+            <summary>
+            Gets or sets the floated hint disabled color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LineColor">
+            <summary>
+            Gets or sets the line color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedLineColor">
+            <summary>
+            Gets or sets the focused line color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorLineColor">
+            <summary>
+            Gets or sets the error line color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FilledLineDisabledColor">
+            <summary>
+            Gets or sets the disabled filled line color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OutlinedLineDisabledColor">
+            <summary>
+            Gets or sets the disabled outlined line color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelColor">
+            <summary>
+            Gets or sets the counter label color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelErrorColor">
+            <summary>
+            Gets or sets the counter label error color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelDisabledColor">
+            <summary>
+            Gets or sets the disabled counter label color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ContainerBackgroundDisabledColor">
+            <summary>
+            Gets or sets the disabled container background  color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperTextColor">
+            <summary>
+            Gets or sets the helper text color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperTextDisabledColor">
+            <summary>
+            Gets or sets the disabled helper text color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextColor">
+            <summary>
+            Gets or sets the error text color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextDisabledColor">
+            <summary>
+            Gets or sets the disabled error text color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleFocusedColor">
+            <summary>
+            Gets or sets the focused password toggle color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleUnfocusedColor">
+            <summary>
+            Gets or sets the unfocused password toggle color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleDisabledColor">
+            <summary>
+            Gets or sets the disabled password toggle color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleErrorColor">
+            <summary>
+            Gets or sets the password toggle error color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.TopPadding">
+            <summary>
+            Gets the top padding of the input view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.BottomPadding">
+            <summary>
+            Gets the bottom padding of the input view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsOutlined">
+            <summary>
+            Gets a value indicating whether the background mode is outline.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.BaseLineMaxHeight">
+            <summary>
+            Gets the base line max height.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AssistiveLabelFontSize">
+            <summary>
+            Gets the font size of the assistive labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AssistiveLabelHeight">
+            <summary>
+            Gets the height of the assistive labels.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.EdgePadding">
+            <summary>
+            Gets or sets padding size for the horizontal edges.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.Text">
+            <summary>
+            Gets the text from input view of <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayout"/>.
+            </summary>
+            <value>The text.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.PasswordToggleView">
+            <summary>
+            Gets or sets the password visibility toggle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsHintFloated">
+            <summary>
+            Gets or sets a value indicating whether the hint war floated or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Method invoke to get the initial set of color's from theme dictionary.
+            </summary>
+            <returns>Return the text input layout theme dictionary</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke when theme changes are applied for internal properties.
+            </summary>
+            <param name="oldTheme">Old theme name</param>
+            <param name="newTheme">New theme name</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke when theme dictionary contains syncfusion theme.
+            </summary>
+            <param name="oldTheme">Old theme name</param>
+            <param name="newTheme">New theme name</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateText(System.String)">
+            <summary>
+            Raise on text value changed to update the appearance.
+            </summary>
+            <param name="newText">String.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AnimateTo(System.UInt32,System.Boolean,System.Boolean)">
+            <summary>
+            Method used to handle the hint and input view animation.
+            </summary>
+            <param name="duration">The animation duration.</param>
+            <param name="isBeingAnimate">Whether translation should be animatable.</param>
+            <param name="forceTranslateToTop">Whether the hint needs translation.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnFocusChanged(System.Boolean,System.Boolean)">
+            <summary>
+            Updates the focus state of input text view.
+            </summary>
+            <param name="focused">Boolean.</param>
+            <param name="forcePositioning">Boolean.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnBindingContextChanged">
+            <summary>
+            Overridden. Raised when the binding context changed.  
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnParentSet">
+            <summary>
+            To bind the flow direction property of parent with the RTL property in this view.
+            The parent will be iterated until we get the flow direction value where the value is set other than match parent.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnShowHintChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the show hint changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnShowCharCountChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the enable counter changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnShowHelperTextChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the show helper text changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHasErrorChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the show error changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnEnablePasswordVisibilityToggleChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the show password visibility toggle changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnContainerBackgroundColorChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the background color of the container changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnErrorColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the error color changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnUnfocusedColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the unfocused color changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnFocusedColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the focused color changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnInputViewChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the input view changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnLeadingViewChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the leading view changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnTrailingViewChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the trailing view changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnLeadingViewPositionChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the leading view position changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnTrailingViewPositionChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the trailing view position changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Object.</param>
+            <param name="newValue">Object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHintChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the hint text changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Object.</param>
+            <param name="newValue">Object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHelperTextChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the helper text changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnErrorTextChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the error text changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnContainerTypeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the border settings changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnCharMaxLengthChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the counter max length changed.
+            </summary>
+            <param name="bindable">Object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnEnabledPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsEnabled"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnIsRTLPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="!:LayoutDirection"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHintColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HintColor"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnLineColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LineColor"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnCounterLabelColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LineColor"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHelperTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LineColor"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnErrorTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextColor"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnPasswordToggleColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="!:PasswordToggleColor"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnReserveSpaceForAssistiveLabelsPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ReserveSpaceForAssistiveLabels"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnCornerRadiusPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OutlineCornerRadius"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnFocusedStrokeWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedStrokeWidth"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnUnfocusedStrokeWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UnfocusedStrokeWidth"/> property was changed.
+            </summary>
+            <param name="bindable">object</param>
+            <param name="oldValue">object</param>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnStrokeWidthPropertyChanged">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.FocusedStrokeWidth"/> and <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UnfocusedStrokeWidth"/> property has changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnReserveSpaceForAssistiveLabelsPropertyChanged(System.Boolean)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ReserveSpaceForAssistiveLabels"/> property was changed.
+            </summary>
+            <param name="reserveSpaceForAssistiveLabels">Boolean</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateCornerRadius">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OutlineCornerRadius"/> property was changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateStrokeWidth">
+            <summary>
+            Update the base line and outlined border line stroke width.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnFocusedColorPropertyChanged(System.Object,System.Object)">
+            <summary>
+            Raised when the focused color changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnUnfocusedColorPropertyChanged(System.Object,System.Object)">
+            <summary>
+            Raised when the unfocused color changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnErrorColorPropertyChanged(System.Object,System.Object)">
+            <summary>
+            Raised when the error color changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHintColorPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HintColor"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnLineColorPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.LineColor"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnErrorTextColorPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ErrorTextColor"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnCounterLabelColorPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CounterLabelColor"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHelperTextColorPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.HelperTextColor"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnPasswordToggleColorPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="!:PasswordToggleColor"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateContainerBackgroundColor">
+            <summary>
+            Update the outline border color.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateHintColor">
+            <summary>
+            Updates the hint color of UI elements based on state.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateLineColor">
+            <summary>
+            Updates the line color of UI elements based on state.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateErrorTextColor">
+            <summary>
+            Updates the error text color of UI elements based on state.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateCounterLabelColor">
+            <summary>
+            Updates the counter label color of UI elements based on state.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateHelperTextColor">
+            <summary>
+            Updates the helper text color of UI elements based on state.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdatePasswordToggleColor">
+            <summary>
+            Updates the line color of UI elements based on state.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnIsRTLPropertyChanged(System.Object)">
+            <summary>
+            Raised when the <see cref="!:LayoutDirection"/> property was changed.
+            </summary>
+            <param name="newValue">object</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnEnabledPropertyChanged(System.Boolean)">
+            <summary>
+            Raised when the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.IsEnabled"/> property was changed.
+            </summary>
+            <param name="isEnabled">Boolean</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnShowHintChanged(System.Object,System.Object)">
+            <summary>
+            Raised when show hint changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnShowCharCountChanged(System.Object,System.Object)">
+            <summary>
+            Raised when show char count changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnShowHelperTextChanged(System.Object,System.Object)">
+            <summary>
+            Raised when show helper text changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHasErrorChanged(System.Object,System.Object)">
+            <summary>
+            Raised when has error changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnEnablePasswordVisibilityToggleChanged(System.Object,System.Object)">
+            <summary>
+            Raised when the show password visibility toggle changed.
+            </summary>
+            <param name="oldValue">Object.</param>
+            <param name="newValue">Object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnColorChanged">
+            <summary>
+            Raised when error color or container color changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnInputViewChanged(System.Object,System.Object)">
+            <summary>
+            Raised when input view changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnLeadingViewChanged(System.Object,System.Object)">
+            <summary>
+            Raised when leading view changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnTrailingViewChanged(System.Object,System.Object)">
+            <summary>
+            Raised when trailing view changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnLeadingViewPositionChanged(System.Object,System.Object)">
+            <summary>
+            Raised when leading view position changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnTrailingViewPositionChanged(System.Object,System.Object)">
+            <summary>
+            Raised when trailing view position changed.
+            </summary>
+            <param name="oldValue">Object.</param>
+            <param name="newValue">Object.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnHintChanged(System.Object,System.Object)">
+            <summary>
+            Raised when hint changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnContainerTypeChanged(System.Object,System.Object)">
+            <summary>
+            Raised when background mode changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateCharLength">
+            <summary>
+            Updates the length of the char.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.DefineRowsAndColumns">
+            <summary>
+            Defines the rows and columns based on material design.
+            </summary>
+            +-0 or 48---+--------------star--------------+-0 or 36--+--0 or 48---+
+            |           |                                |          |           0 - Android and UWP
+            |           |          TOP  PADDING          |          |            |
+            |           |                                |          |           24 - iOS
+            |-----------|--------------------------------|----------|------------|
+            |           |                                |          |            |
+            | LEAD VIEW |       INPUT VIEW / HINT        | PASSWORD | TRAIL VIEW |
+            |           |                                |          |           auto
+            |-----------|--------------------------------|----------|------------|
+            |           |                                |          |           0 - Android and UWP
+            |           |         BOTTOM PADDING         |          |            |
+            |           |                                |          |           12 - iOS
+            |-----------+--------------------------------+----------+------------|
+            |                                                                    |
+            |                             BASE LINE                              2
+            |                                                                    |
+            |-----------+--------------------------------------------------------|
+            |           |                                                       auto - Android
+            |           | HELPER/ERROR LABEL                       CHAR COUNTER  |
+            |           |                                                       16 - iOS and UWP
+            +-----------+--------------------------------------------------------+
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.GetLayoutHeight">
+            <summary>
+            Gets the layout height.
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateGridRowHeight(System.Int32,System.Int32)">
+            <summary>
+            Updates width of grid row.
+            </summary>
+            <param name="rowId">RowId.</param>
+            <param name="height">Height.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateGridColumnWidth(System.Int32,System.Int32)">
+            <summary>
+            Updates width of grid column.
+            </summary>
+            <param name="columnId">ColumnId.</param>
+            <param name="width">Width.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.InitializeAssistiveLabels">
+            <summary>
+            Initializes the assistive labels.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.InitializePasswordToggleView">
+            <summary>
+            Initialize the password toggle view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.SetBinding">
+            <summary>
+            Method used to set default bindings.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.BindPasswordToggleViewProperty">
+            <summary>
+            Method used to bind <see cref="F:Xamarin.Forms.Entry.IsPasswordProperty" /> property into <see cref="F:Syncfusion.XForms.TextInputLayout.PasswordToggleView.IsCheckedProperty"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.RemovePasswordToggleView">
+            <summary>
+            Method used to remove the password toggle view from the main layout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateToggleViewPosition">
+            <summary>
+            Method used to update the password toggle view position based on the background mode property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CreateLabelInstance">
+            <summary>
+            Creates the new label instance and sets necessary attributes for the assistive label.
+            </summary>
+            <returns>The label instance.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateErrorVisibility">
+            <summary>
+            Updates the error visibility through animation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AnimateAssistiveLabelTo(Xamarin.Forms.Label)">
+            <summary>
+            Method used to animate the assistive label asynchronously.
+            </summary>
+            <remarks>Animation for helper and error label.</remarks>
+            <param name="label">The <see cref="T:Xamarin.Forms.Label"/>.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnSizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the size changed.
+            </summary>
+            <param name="sender">Object.</param>
+            <param name="e">EventArgs.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            To listen property changes when flow direction of the text input layout updated.
+            </summary>
+            <param name="sender">sender</param>
+            <param name="e">pvent args</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.ShouldApplyErrorColor">
+            <summary>
+            Method used to check whether the current state is error or not.
+            </summary>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateColor(System.Boolean)">
+            <summary>
+            Updates the color of UI elements based on state.
+            </summary>
+            <param name="allowMarginUpdate">If set to <c>true</c> allow margin update.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateViewMargin">
+            <summary>
+            Update the margin of the elements.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateInputViewMargin(System.Int32,System.Boolean)">
+            <summary>
+            Method used to update the <see cref="P:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.InputView"/> margin.
+            </summary>
+            <param name="topMargin">Integer</param>
+            <param name="isNoneType">Boolean</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AnimateHintTo(System.UInt32,System.Boolean,System.Boolean)">
+            <summary>
+            Method used to floating the hint.
+            </summary>
+            <param name="duration">The animation duration.</param>
+            <param name="canAnimate">Whether translation should be animatable.</param>
+            <param name="forceTranslateToTop">Whether the hint needs translation.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AnimateInputViewTo(System.UInt32,System.Boolean,System.Boolean)">
+            <summary>
+            Handles input view fade animation.
+            </summary>
+            <param name="duration">The animation duration.</param>
+            <param name="canAnimate">Whether translation should be animatable</param>
+            <param name="hintFloated">Decides whether input view opacity is lower or higher.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateOutlineBorderText">
+            <summary>
+            Method used to update the outline border text for cut-out.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateLineWidth(Xamarin.Forms.View,System.Int32,System.Int32)">
+            <summary>
+            Updates the width of the line.
+            </summary>
+            <param name="view">View.</param>
+            <param name="column">Column.</param>
+            <param name="columnSpan">ColumnSpan.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateViewPositions">
+            <summary>
+            Updates the leading and trailing views position.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.AddLeadAndTrailView(System.Int32,System.Object,System.Object)">
+            <summary>
+            To add the lead and trail view.
+            </summary>
+            <param name="viewIndex">View index.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateIconPadding">
+            <summary>
+            Updates the padding for leading and trail view based on its position.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateEdgePadding">
+            <summary>
+            Method used to update the padding of the layout based on leading view position.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayoutStyles">
+            <summary>
+            Holds the theme style for the SfTextInputLayout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayoutStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.TextInputLayout.SfTextInputLayoutStyles" /> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Border.SfBorder">
+            <summary>
+            Represents the <see cref="T:Syncfusion.XForms.Border.SfBorder"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Border.SfBorder.BorderColorProperty">
+            <summary>
+            Identifies the BorderColor bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Border.SfBorder.BorderWidthProperty">
+            <summary>
+            Identifies the BorderThickness bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Border.SfBorder.CornerRadiusProperty">
+            <summary>
+            Identifies the CornerRadius bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Border.SfBorder.BackgroundColorProperty">
+            <summary>
+            Identifies the BackgroundColor bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Border.SfBorder.ElevationProperty">
+            <summary>
+            Identifies the Elevation bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Border.SfBorder"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Border.SfBorder.CornerRadius">
+            <summary>
+            Gets or sets the corner radius of border container
+            </summary>
+            <value>The corner radius.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Border.SfBorder.BorderColor">
+            <summary>
+            Gets or sets the border color of border container.
+            </summary>
+            <value>The border color.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Border.SfBorder.BorderWidth">
+            <summary>
+            Gets or sets the border width of border container
+            </summary>
+            <value>The border thickness.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Border.SfBorder.BackgroundColor">
+            <summary>
+            Gets or sets the BackgroundColor of border container.
+            </summary>
+            <value>The content of border.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Border.SfBorder.Elevation">
+            <summary>
+            Gets or sets a elevation.
+            </summary>
+            <value>The Elevation.</value>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Returns the controls style.
+            </summary>
+            <returns>Returns the style.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            The method called when a theme dictionary that contains the value for the control key is merged in application. 
+            </summary>
+            <param name="oldTheme">The old theme Parameter.</param>
+            <param name="newTheme">The new theme Parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            The method called when users merge a theme dictionary that contains value for SyncfusionTheme dynamic resource key.
+            </summary>
+            <param name="oldTheme">The old theme Parameter.</param>
+            <param name="newTheme">The new theme Parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.LayoutChildren(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Layout the children based on border width
+            </summary>
+            <param name="x"> x value of border </param>
+            <param name="y"> y value of border </param>
+            <param name="width"> width of border </param>
+            <param name="height"> height of border </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.OnMeasure(System.Double,System.Double)">
+            <summary>
+            On the measure.
+            </summary>
+            <returns>The measure.</returns>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.OnBackgroundColorChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            This method triggered when background property gets change
+            </summary>
+            <param name="bindable"> it is object of border </param>
+            <param name="oldValue"> old value of backgroud color property </param>
+            <param name="newValue"> new value of background color property </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.OnBackgroundColorChanged">
+            <summary>
+            This method used to set the background color to base control
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.OnBorderWidthChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            This method triggered when border width property gets change
+            </summary>
+            <param name="bindable"> it is object of border </param>
+            <param name="oldValue"> old value of border width property </param>
+            <param name="newValue"> new value of border width property </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorder.OnBorderWidthCoerceChanged(Xamarin.Forms.BindableObject,System.Object)">
+            <summary>
+            This method triggered before assign the border width
+            </summary>
+            <param name="bindable"> it is object of border </param>
+            <param name="value"> assigning value of border width property </param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.XForms.Border.SfBorderStyles">
+            <summary>
+            Holds the theme style for the SfBorder control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Border.SfBorderStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Border.SfBorderStyles" /> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Core.LicenseHelper">
+            <summary>
+            Helper class to validate license.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Core.LicenseHelper.ValidateLicense(Xamarin.Forms.View)">
+            <summary>
+            Checks if the given license key is valid for View type controls.
+            </summary>
+            <param name="view">View</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Core.LicenseHelper.ValidateLicense(Xamarin.Forms.Page)">
+            <summary>
+            Checks if the given license key is valid for page type controls.
+            </summary>
+            <param name="page">Page</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Core.LicenseHelper.ShowLicenseMessage(System.String)">
+            <summary>
+            Shows a alert if the given license key is not valid.
+            </summary>
+            <param name="message">string</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Core.LicenseHelper.ValidateLicense">
+            <summary>
+            Checks if the given license key is valid.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Core.RTLConverter">
+            <summary>
+            Converter used to get the current layout flow direction.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Core.RTLConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The object.</param>
+            <param name="targetType">The type.</param>
+            <param name="parameter">Converter parameter.</param>
+            <param name="culture">The <see cref="T:System.Globalization.CultureInfo"/>.</param>
+            <returns>Whether the current layout flow direction is RTL.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Core.RTLConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The object.</param>
+            <param name="targetType">The type.</param>
+            <param name="parameter">Converter parameter.</param>
+            <param name="culture">The <see cref="T:System.Globalization.CultureInfo"/>.</param>
+            <returns>Whether the current layout flow direction is RTL.</returns>
+        </member>
+        <member name="T:Syncfusion.XForms.Themes.IThemeElement">
+            <summary>
+            The interface from which control's subviews/styles should be inherited.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.IThemeElement.OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            This method will be called when a theme dictionary that contains the value for your control key is merged in application. 
+            </summary>
+            <param name="oldTheme">Old theme.</param>
+            <param name="newTheme">New theme.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.IThemeElement.OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            This method will be called when users merge a theme dictionary that contains value for “SyncfusionTheme” dynamic resource key.
+            </summary>
+            <param name="oldTheme">Old theme.</param>
+            <param name="newTheme">New theme.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Themes.IParentThemeElement">
+            <summary>
+            The interface from which control should be inherited.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.IParentThemeElement.GetThemeDictionary">
+            <summary>
+            This method is declared only in IParentThemeElement and you need to implement this method only in main control.
+            </summary>
+            <returns>ResourceDictionary</returns>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.CommonThemeProperty">
+            <summary>
+            The common theme property to get syncfusion theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.ControlThemeProperty">
+            <summary>
+            The control theme property to get theme of the respective control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.PrimaryColorProperty">
+            <summary>
+            The property used to set primary color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.PrimaryLightColorProperty">
+            <summary>
+            The property used to set primary light background color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.PrimaryDarkColorProperty">
+            <summary>
+            The property used to set primary dark background color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.PrimaryForegroundColorProperty">
+            <summary>
+            The property used to set primary foreground color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.PrimaryLightForegroundColorProperty">
+            <summary>
+            The property used to set primary light foreground color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.PrimaryDarkForegroundColorProperty">
+            <summary>
+            The property used to set primary dark foreground color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.SuccessColorProperty">
+            <summary>
+            The property used to set success color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.ErrorColorProperty">
+            <summary>
+            The property used to set error color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.WarningColorProperty">
+            <summary>
+            The property used to set warning color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.InfoColorProperty">
+            <summary>
+            The property used to set info(such as more details) color for theme.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.ControlThemeCache">
+            <summary>
+            The property used to cache resource dictionaries which are belonged to control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.StyleTargetDictionaries">
+            <summary>
+            The style target dictionaries.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.controlKeyProperty">
+            <summary>
+            The control key property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.implicitStyleProperty">
+            <summary>
+            The implicit style property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.pendingDictionariesToMerge">
+            <summary>
+            The Dictionary contains pending dictionaries to which are to be merged.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Themes.ThemeElement.isScheduled">
+            <summary>
+            Boolean property to check whether pending dictionaries are merged.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.InitializeThemeResources(Xamarin.Forms.Element,System.String)">
+            <summary>
+             Call this <see langword="static"/> method in the constructor for which implement IParentThemeElement and IThemeElement interfaces.
+            </summary>
+            <param name="element">Element.</param>
+            <param name="controlKey">Control key.</param>
+            <example>
+            <code>
+            public class SfChart 
+            {
+                public SfChart()
+                {
+                    ThemeElement.InitializeThemeResources(this, "SfChartTheme");
+                }
+            }
+            
+            public class ChartAxis
+            {
+                public ChartAxis()
+                {
+                    ThemeElement.InitializeThemeResources(this, "SfChartTheme");
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.AddStyleDictionary(Xamarin.Forms.ResourceDictionary)">
+            <summary>
+            Adds the style dictionary.
+            </summary>
+            <param name="resourceDictionary">Resource dictionary.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.MergePendingDictionaries">
+            <summary>
+            Merges the pending dictionaries to existing resource dictionaries.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.OnImplicitStyleChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Called when control theme was changed implicitily
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.OnCommonThemePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Implementation of common theme property changed.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.MergeThemeDictionary(System.String,Xamarin.Forms.ResourceDictionary)">
+            <summary>
+            Merges the theme dictionary to pending dictionaries.
+            </summary>
+            <param name="key">Key.</param>
+            <param name="themeDictionary">Theme dictionary.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.TryGetThemeDictionary(Xamarin.Forms.VisualElement,Xamarin.Forms.ResourceDictionary@)">
+            <summary>
+            Tries the get theme dictionary from Control.
+            </summary>
+            <returns><c>true</c>, if get theme dictionary was tryed, <c>false</c> otherwise.</returns>
+            <param name="element">Element.</param>
+            <param name="resourceDictionary">Resource dictionary.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.ThemeElement.OnControlThemeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Implementation of control theme changed.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Themes.LightTheme">
+            <summary>
+            Light theme resource dictionary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.LightTheme.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Themes.LightTheme"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Themes.SfChartColors">
+            <summary>
+            List of colors for ChartColorModel custombrushes
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Themes.SyncfusionThemeDictionary">
+            <summary>
+            ThemeDictionary class for Syncfusion in which controls themes are to be included.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Themes.SyncfusionThemeDictionary.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Themes.SyncfusionThemeDictionary"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ParallaxView.IParallaxView">
+            <summary>
+            Interface defines a event and a property which need to be implemented to get relevant datas from custom scrollable elements to perform parallax scrolling.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.ParallaxView.IParallaxView.Scrolling">
+            <summary>
+            Raise this event whenever scrollable element is scrolled
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ParallaxView.IParallaxView.ScrollableContentSize">
+            <summary>
+            Gets or sets a total content size of the scrollable element 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs">
+            <summary>
+            Scrolling Event args 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs.#ctor(System.Double,System.Double,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs" /> class.
+            </summary>
+            <param name="scrollX">double</param>
+            <param name="scrollY">double</param>
+            <param name="canAnimate">bool</param>
+        </member>
+        <member name="P:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs.ScrollX">
+            <summary>
+            Gets the current X scroll position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs.ScrollY">
+            <summary>
+            Gets the current Y scroll position.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.ParallaxView.ParallaxScrollingEventArgs.CanAnimate">
+            <summary>
+             Gets a value indicating whether the value need to get animated or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Core.XForms.IPullToRefresh">
+            <summary>
+            Defines methods and properties that must be implemented to get notification of the pull to refresh actions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Core.XForms.IPullToRefresh.CanCustomizeContentLayout">
+            <summary>
+            Gets or sets a value indicating whether to bounce SfDataGrid body region only with TransitionMode-Push or SfDataGrid to bounce with HeaderRow also(default layout). 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.Pulling(System.Double,System.Object,System.Boolean@)">
+            <summary>
+            Provides notifications regarding the pulling action with the progress value and an out parameter to cancel the pulling event. 
+            </summary>
+            <param name="progress">progress value of the pulling action.</param>
+            <param name="pullToRefresh">Instance of PullToRefresh</param>
+            <param name="cancel">If cancel is set to true, pulling will be cancelled</param>        
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.Refreshing(System.Object)">
+            <summary>
+            Provides notifications regarding the refreshing action.
+            </summary>
+            <param name="pullToRefresh">Instance of PullToRefresh</param>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.Refreshed(System.Object)">
+            <summary>
+            Signals that the view refreshing is completed. 
+            </summary>
+            <param name="pullToRefresh">Instance of PullToRefresh</param>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.PullingCancelled(System.Object)">
+            <summary>
+            Signals that the pulling action is cancelled before the progress meeting 100.
+            </summary>
+            <param name="pullToRefresh">Instance of PullToRefresh</param>
+        </member>
+        <member name="M:Syncfusion.Core.XForms.IPullToRefresh.CanHandleGesture(System.Object)">
+            <summary>
+            Method that determines whether the gesture should be handled by the child elements or not.
+            </summary>
+            <value><b>true</b> The pullable content or its childs will handle the gesture <b>false</b>.</value>
+            <returns>Returns a boolean value indicating whether the child elements can handle the gestures</returns>
+            <param name="pullToRefresh">Instance of PullToRefresh</param>
+        </member>
+        <member name="T:Syncfusion.Core.XForms.NamespaceDoc">
+            <summary>
+            Provides interfaces, classes and methods that contains common logics 
+            for the Syncfusion controls.
+            </summary>
+            <exclude/>
+        </member>
+    </members>
+</doc>

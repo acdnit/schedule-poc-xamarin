@@ -141,6 +141,8 @@ D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Re
 D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Release\90\android\assets\System.Runtime.Serialization.pdb
 D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Release\90\android\assets\System.ServiceModel.Internals.pdb
 D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Release\90\android\assets\System.Xml.pdb
+D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC\bin\Release\SchedulePOC.dll
+D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\bin\Release\SchedulePOC.dll.mdb
 D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Release\90\linksrc\FormsViewGroup.dll.mdb
 D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Release\90\linksrc\Microsoft.Practices.ServiceLocation.dll.mdb
 D:\Temps\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Release\90\linksrc\Plugin.Connectivity.Abstractions.dll.mdb
