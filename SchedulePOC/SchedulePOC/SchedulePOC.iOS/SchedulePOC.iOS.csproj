@@ -36,7 +36,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>i386, x86_64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <Commandlineparameters></Commandlineparameters>
+    <Commandlineparameters>
+    </Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,10 +65,14 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer: Tran Vo  Hoai An (KFRX24MNNF)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchNoSymbolStrip></MtouchNoSymbolStrip>
-    <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
-    <OnDemandResourcesInitialInstallTags></OnDemandResourcesInitialInstallTags>
-    <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
+    <MtouchNoSymbolStrip>
+    </MtouchNoSymbolStrip>
+    <OnDemandResourcesPrefetchOrder>
+    </OnDemandResourcesPrefetchOrder>
+    <OnDemandResourcesInitialInstallTags>
+    </OnDemandResourcesInitialInstallTags>
+    <OnDemandResourcesPrefetchOrder>
+    </OnDemandResourcesPrefetchOrder>
     <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
@@ -165,19 +170,45 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\schedule_58x58.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\schedule_80x80.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\schedule_120x120.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_320x480.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_640x960.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_640x1136.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_1125x2436.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_2436x1125.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\schedule_58x58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\schedule_80x80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\schedule_120x120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_320x480.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_640x960.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_640x1136.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_1125x2436.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\schedule_2436x1125.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.270\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
