@@ -11,8 +11,8 @@
 namespace SchedulePOC {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\CTWassco\\Source\\CrossPlatform\\schedule-poc-xamarin\\SchedulePOC\\SchedulePOC\\Sch" +
-        "edulePOC\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/Sched" +
+        "ulePOC/App.xaml")]
     public partial class App : global::Prism.Unity.PrismApplication {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

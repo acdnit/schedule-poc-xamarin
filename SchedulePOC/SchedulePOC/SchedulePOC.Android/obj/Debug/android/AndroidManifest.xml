@@ -7,7 +7,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="SchedulePOC.Android" android:icon="@drawable/poweroutage" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/poweroutage" android:label="SchedulePOC" android:theme="@style/MainTheme" android:name="md53236e3f8f381caa868f6a1cd4cebb84a.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/poweroutage" android:label="SchedulePOC" android:theme="@style/MainTheme" android:name="md5130fb00331bab6da4cab4af9b74a0b67.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

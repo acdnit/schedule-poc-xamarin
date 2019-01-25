@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <Jars></Jars>
+  <Jars>
+    <Jar>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/0/jl/formsviewgroup.jar</Jar>
+  </Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>D:\CTWassco\Source\CrossPlatform\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\CTWassco\Source\CrossPlatform\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>D:\CTWassco\Source\CrossPlatform\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/5/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/21/jl/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/22/jl/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/lp/5/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/lp/21/jl/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/lp/22/jl/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>D:\CTWassco\Source\CrossPlatform\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Debug\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\CTWassco\Source\CrossPlatform\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>D:\CTWassco\Source\CrossPlatform\schedule-poc-xamarin\SchedulePOC\SchedulePOC\SchedulePOC.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/5.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/21.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/tvhan/Data/Temps/schedule-poc-xamarin-master/SchedulePOC/SchedulePOC/SchedulePOC.Android/obj/Debug/lp/22.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

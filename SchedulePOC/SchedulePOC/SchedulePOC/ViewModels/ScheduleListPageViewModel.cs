@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 using Plugin.Connectivity;
 using Prism.Navigation;
@@ -30,30 +31,32 @@ namespace SchedulePOC.ViewModels {
             set => SetProperty(ref _isConnected, value);
         }
 
-        public override async void OnNavigatedTo(NavigationParameters parameters) {
+        public override async void OnNavigatedTo(NavigationParameters parameters)
+        {
             base.OnNavigatedTo(parameters);
             IsConnected = CrossConnectivity.Current.IsConnected(0);
-            if (IsConnected) {
-                const string url = "http://livecantho.com/su-kien-can-tho/lich-cup-dien/lich-cup-dien-can-tho/";
+            if (IsConnected)
+            {
+                const string url = "http://pccantho.evnspc.vn/H%E1%BB%97-tr%E1%BB%A3-kh%C3%A1ch-h%C3%A0ng/L%E1%BB%8Bch-ng%E1%BB%ABng-cung-c%E1%BA%A5p-%C4%91i%E1%BB%87n";
                 var stream = await _scheduleService.GetStreamFromUrl(url);
                 var docHtml = new HtmlDocument();
                 docHtml.Load(stream);
-                var divTable = (from c in docHtml.DocumentNode.Descendants("div")
-                    where c.Attributes.Contains("id") && c.Attributes["id"].Value == "ja-current-content"
-                    select c).FirstOrDefault();
-                if (divTable != null) {
-                    var table = divTable.Descendants("table").FirstOrDefault();
-
+                var divTable = (from c in docHtml.DocumentNode.Descendants("table")
+                                where c.Attributes.Contains("id") && c.Attributes["id"].Value.Contains("LichCatDien_gridLCDKH")
+                                select c).FirstOrDefault();
+                if (divTable != null)
+                {
                     var html = "<html><head>" +
                                "<meta name='viewport' content='width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;'/>" +
                                "</head><body height='100%' width='100%'><table style='width: 100%;' cellspacing='0' cellpadding='3' border='1'>";
-                    if (table != null) html += table.InnerHtml;
+                    html += Regex.Replace(divTable.InnerHtml, "Nguyễn Trãi", "<span style='font-weight: bold; color: #ff0000;'>Nguyễn Trãi</span>", RegexOptions.IgnoreCase);
                     html += "</table></body></html>";
-                    var htmlSource = new HtmlWebViewSource {Html = html};
+                    var htmlSource = new HtmlWebViewSource { Html = html };
                     Resource = htmlSource;
                 }
             }
-            else {
+            else
+            {
                 await _pageDialogService.DisplayAlertAsync("Thông báo", "Kiểm tra kết nối mạng", "Hủy");
             }
         }
