@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/AppIcon60x60@2x.png">
+      <LogicalName>AppIcon60x60@2x.png</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/LaunchImage-1100-Portrait-2436h@3x.png">
+      <LogicalName>LaunchImage-1100-Portrait-2436h@3x.png</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/LaunchImage-1100-Landscape-2436h@3x.png">
+      <LogicalName>LaunchImage-1100-Landscape-2436h@3x.png</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/LaunchImage.png">
+      <LogicalName>LaunchImage.png</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/LaunchImage@2x.png">
+      <LogicalName>LaunchImage@2x.png</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/LaunchImage-568h@2x.png">
+      <LogicalName>LaunchImage-568h@2x.png</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.6-12.1.2/actool/bundle/Assets.car">
+      <LogicalName>Assets.car</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>
