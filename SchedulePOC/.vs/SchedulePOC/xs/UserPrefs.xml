@@ -1,6 +1,22 @@
 ﻿<Properties StartupConfiguration="{916E76CB-80A2-4DBD-92B3-EF6964849715}|Default">
-  <MonoDevelop.Ide.ItemProperties.SchedulePOC.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.ItemProperties.SchedulePOC.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.1ac2e1" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="SchedulePOC/SchedulePOC/ViewModels/ScheduleListPageViewModel.cs" Line="68" Column="114" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SchedulePOC" expanded="True">
+            <Node name="SchedulePOC" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+            <Node name="SchedulePOC.Android" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.SchedulePOC.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ebfc0447bc530626534228bc9eb2864b8776f126" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />

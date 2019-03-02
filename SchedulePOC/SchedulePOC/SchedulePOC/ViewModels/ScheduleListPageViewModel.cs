@@ -65,7 +65,7 @@ namespace SchedulePOC.ViewModels
                     var html = "<html><head>" +
                                "<meta name='viewport' content='width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;'/>" +
                                "</head><body height='100%' width='100%'><table style='width: 100%;' cellspacing='0' cellpadding='3' border='1'>";
-                    html += Regex.Replace(divTable.InnerHtml, "Nguyễn Trãi", "<span style='font-weight: bold; color: #ff0000;'>Nguyễn Trãi</span>", RegexOptions.IgnoreCase);
+                    html += Regex.Replace(divTable.InnerHtml, "Nguyễn Tr&#227;i", "<span style='display: inline-block; font-weight: bold; color: #ff0000;'>Nguyễn Tr&#227;i</span>", RegexOptions.IgnoreCase);
                     html += "</table></body></html>";
                     var htmlSource = new HtmlWebViewSource { Html = html };
                     Resource = htmlSource;
